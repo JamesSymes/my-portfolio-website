@@ -1,0 +1,98 @@
+.about {
+  padding: 70px 0;
+  color: #8892B0;
+  font-family: 'Fira Code', monospace;
+  background-color: #0c1819;
+  position: relative; /* Add relative positioning to the .skills container */
+  padding-top: 100px;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%);
+  width: 33%; /* 33% of the width of the .skills container */
+  height: 2px; /* Adjust the height and style as needed */
+  background-color: #cccccc3e; /* Adjust the color as needed */
+  margin-top: 15.3%;
+}
+
+.about h2 {
+  text-align: center;
+  color: #ccd6f6;
+  font-size: 32px;
+}
+
+.about-content {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.about-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ccd6f6;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.read-more-less {
+  color: #7DF9FF;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet */
+@media (min-width: 48em) and (max-width: 64em) {
+  .about {
+    padding-top: 10%;  /* 50px */
+  }
+
+  .about h2 {
+    font-size: 1.5em;  /* 24px */
+  }
+
+  .about-content {
+    max-width: 90%;  /* More room for content on mobile */
+    padding: 0 10px; /* Adjust padding for mobile view */
+  }
+
+  .about-text {
+    font-size: 0.875em;  /* 14px */
+    margin-bottom: 1em;  /* Roughly 16px */
+
+  }
+}
+
+/* Mobile */
+@media (max-width: 48em) {
+  .about {
+    padding-top: 45%;  /* 50px */
+  }
+
+  .about h2 {
+    font-size: 1.5em;  /* 24px */
+  }
+
+  .about-content {
+    max-width: 90%;  /* More room for content on mobile */
+    padding: 0 10px; /* Adjust padding for mobile view */
+  }
+
+  .about-text {
+    font-size: 0.875em;  /* 14px */
+    margin-bottom: 1em;  /* Roughly 16px */
+
+  }
+}

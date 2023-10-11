@@ -1,0 +1,122 @@
+.contact {
+  color: #8892B0;
+  font-family: 'Fira Code', monospace;
+  background-color: #0c1819;
+  margin-top: 20%;
+  padding-top: 100px;
+  margin-bottom: 5%;
+
+}
+
+.contact h2 {
+  text-align: center;
+  color: #ccd6f6;
+  font-size: 32px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.contact-description {
+  color: #ccd6f6;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+
+
+ 
+.icons {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  transition: transform 0.3s; /* This will make the scaling smooth */
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-right: 10px; 
+  color: #8892B0;
+}
+
+.icons:hover {
+  color: #7DF9FF;
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet */
+@media (min-width: 48em) and (max-width: 64em) {
+  .contact {
+    padding-top: 10%;
+    margin-bottom: 42%;
+  }
+
+  .contact h2 {
+    font-size: 1.5em;  /* 24px */
+  }
+
+  .contact-content {
+    max-width: 90%;  /* More room for content on mobile */
+    padding: 0 10px; /* Adjust padding for mobile view */
+  }
+
+  .contact-description {
+    font-size: 0.875em;  /* 14px */
+
+  }
+
+  .icons {
+    width: 1.25em;  /* 20px */
+    height: 1.25em; /* 20px */
+    margin-top: 1em;  /* Roughly 16px */
+    margin-left: 1em;  /* Roughly 16px */
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 48em) {
+  .contact {
+    padding-top: 45%;
+    margin-bottom: 42%;
+  }
+
+  .contact h2 {
+    font-size: 1.5em;  /* 24px */
+  }
+
+  .contact-content {
+    max-width: 90%;  /* More room for content on mobile */
+    padding: 0 10px; /* Adjust padding for mobile view */
+  }
+
+  .contact-description {
+    font-size: 0.875em;  /* 14px */
+
+  }
+
+  .icons {
+    width: 1.25em;  /* 20px */
+    height: 1.25em; /* 20px */
+    margin-top: 1em;  /* Roughly 16px */
+    margin-left: 1em;  /* Roughly 16px */
+  }
+}

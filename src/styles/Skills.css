@@ -1,0 +1,137 @@
+.skills {
+  color: #8892B0; /* Match hero text color */
+  font-family: 'Fira Code', monospace; /* Match hero font */
+  background-color: #0c1819; /* Match hero background color */
+  margin-bottom: 20%;
+  margin-top: -5%;
+  padding-top: 100px;
+  position: relative; /* Add relative positioning to the .skills container */
+}
+
+.skills::after {
+  content: "";
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 33%; /* 33% of the width of the .skills container */
+  height: 2px; /* Adjust the height and style as needed */
+  background-color: #cccccc3e; /* Adjust the color as needed */
+  margin-top: 100px;
+}
+
+
+.skills h2 {
+  text-align: center; /* Center the title */
+  color: #ccd6f6; /* Same as the hero title color */
+  font-size: 32px; /* Increase the title size */
+}
+
+.skills p {
+  margin-right: 15%;
+  margin-left: 15%;
+  text-align: center;
+  text-align: justify;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  max-width: 80%; /* Add a maximum width */
+  margin: 0 auto; /* Center the content */
+
+}
+
+.skills-list li {
+  background: #0c1819; /* Slightly lighter background color */
+  border: 1px solid #7DF9FF; /* Match the hero opening color */
+  padding: 10px;
+  border-radius: 5px; /* Add rounded corners */
+  color: #ccd6f6; /* Match the hero title color */
+  margin: 10px;
+}
+
+
+
+
+
+
+/* Tablet */
+@media (min-width: 48em) and (max-width: 64em) {
+  .skills {
+    padding-top: 10%;  
+  }
+
+  .skills h2 {
+    font-size: 1.5em;  /* 24px */
+  }
+
+  .skills p {
+    margin-right: 0.3125em;  /* 5% of 16px */
+    margin-left: 0.3125em;  /* 5% of 16px */
+    font-size: 0.875em;  /* 14px */
+    width: 90%;
+  }
+
+  .skills-list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  max-width: 80%; /* Add a maximum width */
+  margin: 0 auto; /* Center the content */
+  }
+
+  .skills-list li {
+  background: #0c1819; /* Slightly lighter background color */
+  border: 1px solid #7DF9FF; /* Match the hero opening color */
+  padding: 0.3em;
+  border-radius: 0.3em;; /* Add rounded corners */
+  color: #ccd6f6; /* Match the hero title color */
+  margin: 0.3em;
+  }
+}
+
+
+
+
+
+
+
+
+/* Mobile */
+@media (max-width: 48em) {
+  .skills {
+    padding-top: 45%;  
+  }
+
+  .skills h2 {
+    font-size: 1.5em;  /* 24px */
+  }
+
+  .skills p {
+    margin-right: 0.3125em;  /* 5% of 16px */
+    margin-left: 0.3125em;  /* 5% of 16px */
+    font-size: 0.875em;  /* 14px */
+    width: 90%;
+  }
+
+  .skills-list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  max-width: 80%; /* Add a maximum width */
+  margin: 0 auto; /* Center the content */
+  }
+
+  .skills-list li {
+  background: #0c1819; /* Slightly lighter background color */
+  border: 1px solid #7DF9FF; /* Match the hero opening color */
+  padding: 0.3em;
+  border-radius: 0.3em;; /* Add rounded corners */
+  color: #ccd6f6; /* Match the hero title color */
+  margin: 0.3em;
+  }
+}

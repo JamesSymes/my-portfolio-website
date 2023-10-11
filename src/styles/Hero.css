@@ -1,0 +1,357 @@
+/* Hero.css */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  color: #8892B0;
+  font-family: 'Fira Code', monospace;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  text-align: left;
+  margin-left: 10%;
+  transform: translateY(100%); /* Start from the bottom */
+  animation: riseUp 1s forwards; /* Animation name, duration, and fill mode */
+}
+
+@keyframes riseUp {
+  to {
+    transform: translateY(0); /* End at its normal position */
+  }
+}
+
+
+.hero-opening {
+  font-size: 16px;
+  margin-top: 75px;  /* Add this line */
+  margin-bottom: 5px; /* Adjust as needed */
+  color: #7DF9FF;
+}
+
+.hero-title {
+  font-size: 45px;
+  margin-top: 0;    /* Add this line */
+  margin-bottom: 5px; /* Adjust as needed */
+  color: #ccd6f6;
+}
+
+.hero-title-2 {
+  font-size: 45px;  /* Adjust as needed */
+  margin-top: 0;    /* Add this line */
+  margin-bottom: 5px; /* Adjust as needed */
+}
+
+
+.hero-description {
+  font-size: 16px; /* Increase the font size for the description */
+  max-width: 55%; /* Adjust the value to limit the length of the text line */
+  margin-bottom: 20px;
+  width: 55%;
+}
+
+.hero-sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0c1819;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.skill-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cta-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+}
+
+.cta-button {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ccd6f6; /* Same as the hero title color */
+  background-color: null; /* Same as the hero opening color */
+  border-radius: 5px;
+  font-family: 'Fira Code', monospace; /* Same as the hero font */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for smooth color and background change */
+  border: 1px solid #7DF9FF; /* Add a border to the buttons */
+}
+
+.cta-button:hover {
+  color: #4a4242; /* Change the color to the hero sidebar background color on hover */
+  border: 1px solid #7DF9FF; /* Change the border color to the hero opening color on hover */
+}
+
+
+.skill-item {
+  font-size: 16px; /* Adjust the font size for each skill item */
+  font-weight: bold;
+  position: absolute;
+  opacity: 0;
+  animation: fadeIn 2.5s forwards;
+  color: #fff;
+}
+
+
+
+
+
+
+/* svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  transition: transform 0.3s;
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-right: 10px; 
+}
+
+svg:hover {
+  color: #7DF9FF;
+  transform: scale(1.2); 
+}
+
+
+.icon-github {
+  color: #8892B0;
+}
+
+.icon-linkedin {
+  color: #8892B0;
+} */ 
+
+.hero-icons {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  transition: transform 0.3s; /* This will make the scaling smooth */
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-right: 10px; 
+  color: #8892B0;
+}
+
+.hero-icons:hover {
+  color: #7DF9FF;
+  transform: scale(1.2);
+}
+
+
+
+/* html */
+.skill-item-1 {
+  font-size: 28px;
+  top: 15%;
+  left: 40%;
+  animation: initialDelay 1s, fadeInOut 30s 12s infinite;
+}
+
+/* css */
+.skill-item-2 {
+  font-size: 40px;
+  top: 68%;
+  left: 70%;
+  animation: initialDelay 0s, fadeInOut 30s 17s infinite;
+}
+
+/* JavaScript */
+.skill-item-3 {
+  font-size: 45px;
+  top: 43%;
+  left: 70%;
+  animation: initialDelay 0s, fadeInOut 30s 2s infinite;
+}
+
+/* React */
+.skill-item-4 {
+  font-size: 35px;
+  top: 20%;
+  left: 60%;
+  animation: initialDelay 0s, fadeInOut 30s 7s infinite;
+}
+
+/* Vite */
+.skill-item-5 {
+  font-size: 28px;
+  top: 15%;
+  left: 80%;
+  animation: initialDelay 1s, fadeInOut 30s 22s infinite;
+}
+
+/* Web3 */
+.skill-item-6 {
+  font-size: 36px;
+  top: 76%;
+  left:35%;
+  animation: initialDelay 1s, fadeInOut 30s 27s infinite;
+}
+
+/* Solidity */
+.skill-item-7 {
+  font-size: 28px;
+  bottom: 20%;
+  left: 55%;
+  animation: initialDelay 1s, fadeInOut 30s 19s infinite;
+}
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.7); /* Start at 70% of the size */
+  }
+  45% { /* 10% of the animation duration is the fade in and out */
+    opacity: 1;
+    transform: scale(1); /* Grow to 100% of the size */
+  }
+  50% {
+    opacity: 0;
+    transform: scale(1); /* Maintain 100% of the size as it fades out */
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes initialDelay {
+  0%, 100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+/* Skills Like HTML, CSS AND JS Note Fading On On Mobiles and Desktops */
+@media only screen and (max-width: 1024px) {
+  .hero-sidebar {
+    display: none;
+  }
+
+}
+
+
+
+
+
+/* Tablet Version */
+@media only screen and (max-width: 1024px) {
+  .hero {
+    height: 100vh;  /* Ensure hero takes up the full screen on tablet */
+  }
+
+  .hero-content {
+    margin-left: 5%;  /* Adjusted for tablet screens */
+    font-size: 0.9em;  /* Slightly scale down the text for tablets */
+  }
+
+  .hero-title, .hero-title-2 {
+    font-size: 2em;  /* Decreased for tablets */
+  }
+
+  .hero-description {
+    font-size: 14px; /* Decreased for tablets */
+    width: 60%;  /* Adjusted width */
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Mobile Version */
+@media only screen and (max-width: 768px) {
+  .hero {
+    height: 100vh;  /* Ensure hero takes up the full screen on mobile */
+  }
+
+  .hero-sidebar {
+    display: none;
+  }
+
+  .hero-content {
+    margin-left: 5%; 
+    margin-bottom: 0.8em;
+  }
+
+
+  .hero-opening {
+    font-size: 1.0em;
+    margin-top: 0px; 
+    margin-bottom: 0.8em;
+  }
+
+  .hero-title {
+    font-size: 2.2em;
+
+  }
+
+  .hero-title-2 {
+    font-size: 1.7em;
+    margin-bottom: 0.8em;
+  }
+
+  .hero-description {
+    font-size: 1.0em;  /* Further decreased for mobile */
+    width: 90% !important;
+    max-width: 90%;
+    margin-bottom: 0.8em;
+  }
+
+  .cta-buttons {
+    margin-bottom: 0.8em;
+  }
+
+
+
+  .hero-icons {
+    width: 2.0em;
+    height: 2.0em;
+    margin-top: 1.2em;
+    margin-left: 0.4em;
+    padding-right: 1.2em;
+
+  }
+  
+
+}

@@ -1,0 +1,315 @@
+/* Projects.css */
+.projects {
+  padding-top: 100px;
+  color: #8892B0;
+  font-family: 'Fira Code', monospace;
+  background-color: #0c1819;
+}
+
+.scrolling-visible-wrapper {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  width: 100%; 
+}
+
+
+.projects h2 {
+  text-align: center;
+  color: #ccd6f6;
+  font-size: 32px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column; /* Stack projects vertically */
+  align-items: center;
+  padding: 50px 0;
+}
+
+
+
+
+/* image */
+.project-item {
+  width: 80%;
+  display: flex;
+  flex-direction: row; /* Display image and details side by side */
+  align-items: center; /* Center project details vertically */
+  text-align: center; /* Center text within project details */
+  margin-bottom: 17%; /* Adjust this value based on your preference */
+  position: relative;
+  padding-bottom: 7%; /* Add space at the bottom to accommodate the line */
+}
+
+.project-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 33%; /* Adjust the width as needed */
+  height: 2px; /* Adjust the height and style as needed */
+  background-color: #cccccc3e; /* Adjust the color as needed */
+}
+
+.project-image {
+  width: auto; 
+  height: auto; 
+  flex: 1;
+  position: relative;
+  transform: translateZ(0);
+  transition: transform 0.3s ease;
+}
+
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #7DF9FF;
+  opacity: 0; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  transition: opacity 0.3s ease; 
+}
+
+
+.project-image:hover .overlay {
+  opacity: 0.7; /* Show the overlay with transparency when hovered */
+}
+
+
+.visit-button {
+  display: none; /* Initially hide the button */
+  padding: 10px 20px;
+  background-color: #0c1819; /* Button background */
+  color: #ffffff; /* Button text color */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none; /* Remove default link styles */
+  font-family: 'Fira Code', monospace; /* Use the same font as the rest of the page */
+}
+
+.project-image:hover .visit-button {
+  display: block; /* Show the button when the container is hovered */
+}
+
+.project-image img {
+  width: 100%; 
+  max-height: 40vh;
+  object-fit: cover;
+  border: 4px solid #7DF9FF;
+  display: block; /* This will remove any extra space due to line-height */
+}
+
+
+.project-image, .project-image img {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.project-details {
+  flex: 1;
+  /* padding: 20px;
+  background-color: #0c1819;
+  border: 1px solid #7DF9FF;
+  border-radius: 5px;
+  margin-left: 20px;  */
+}
+
+.project-details h3 {
+  margin-top: 0;
+  color: #7DF9FF;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.project-details p {
+  margin-bottom: 10px;
+  color: #ccd6f6;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.project-title {
+  margin-left: 5px;
+  color: #7DF9FF;  /* Or any other color you prefer */
+  text-decoration: none;
+}
+
+.project-title:hover {
+  text-decoration: underline;
+}
+
+
+/* Incon Links  */
+.project-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 7%;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.projects-icons {
+  width: 24px;   
+  height: 24px;   
+  transition: fill 0.3s ease;  
+  transition: transform 0.3s;
+  text-align: left;
+  text-decoration: none;  
+  color: #8892B0;  
+}
+
+.projects-icons:hover {
+  color: #7DF9FF; 
+  transform: scale(1.2);
+}
+
+
+.read-more-link {
+  margin-left: 5px;
+  color: #7DF9FF;  /* Or any other color you prefer */
+  text-decoration: none;
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .project-item {
+    flex-direction: column; /* Stack image and details vertically */
+    align-items: center;
+    margin-bottom: 10%;
+    padding-bottom: 5%;
+  }
+
+  .project-image img {
+    max-height: 30vh;
+  }
+
+  .project-details {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .project-details h3, .project-details p {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .project-links {
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile */
+@media (max-width: 767px) {
+  .projects {
+    padding-top: 10%;
+  }
+
+
+
+  .projects h2 {
+    font-size: 1.2em;
+  }
+
+  .project-list {
+    display: flex;
+    flex-direction: column; /* Stack projects vertically */
+    align-items: center;
+    padding-top: 10%;
+  }
+
+  .project-item {
+    flex-direction: column; /* Stack image and details vertically */
+    width: 90%;
+    padding-bottom: 20%;
+    padding-bottom: 20%;
+    height: 100%
+  }
+
+  .project-image img {
+    max-height: 30vh;
+  }
+
+  .project-details {
+    text-align: center;
+    margin-top: 15px;
+    
+  }
+
+  .project-details h3, .project-details p {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .project-links {
+    justify-content: center;
+    margin-left: 0;
+  }
+}

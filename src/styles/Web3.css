@@ -1,0 +1,140 @@
+.web3 {
+  color: #8892B0;
+  font-family: 'Fira Code', monospace;
+  background-color: #0c1819;
+  margin-top: 20%;
+  margin-bottom: 10%;
+  padding-top: 100px;
+  padding-bottom: 5%;
+  position: relative; /* Add relative positioning to the .skills container */
+}
+
+.web3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 33%; /* 33% of the width of the .skills container */
+  height: 2px; /* Adjust the height and style as needed */
+  background-color: #cccccc3e; /* Adjust the color as needed */
+  margin-top: 62px;
+}
+
+.web3 h2 {
+  text-align: center;
+  color: #ccd6f6;
+  font-size: 32px;
+}
+
+.web3-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.web3-description {
+  margin-bottom: 20px;
+  color: #ccd6f6;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.web3-content .fcc-link {
+  color: #7DF9FF;
+  text-decoration: none;
+}
+
+.web3-content .fcc-link:hover {
+  text-decoration: underline;
+}
+
+
+
+.icons {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  transition: transform 0.3s; /* This will make the scaling smooth */
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-right: 10px; 
+}
+
+.icons:hover {
+  color: #7DF9FF;
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet */
+@media (min-width: 48em) and (max-width: 64em) {
+  .web3 {
+    padding-top: 10%; 
+  }
+
+  .web3 h2 {
+    font-size: 1.5em;  /* 24px */
+  }
+
+  .web3-content {
+    padding: 0 0.625em;  /* 10px */
+  }
+
+  .web3-description {
+    font-size: 0.875em;  /* 14px */
+    max-width: 90%;
+  }
+
+  .icons {
+    width: 1.125em;  /* 18px */
+    height: 1.125em;  /* 18px */
+    margin-top: 0.625em;  /* 10px */
+    margin-left: 0.625em;  /* 10px */
+    padding-right: 0.375em;  /* 6px */ 
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 48em) {
+  .web3 {
+    padding-top: 45%; 
+  }
+
+  .web3 h2 {
+    font-size: 1.5em;  /* 24px */
+  }
+
+  .web3-content {
+    padding: 0 0.625em;  /* 10px */
+  }
+
+  .web3-description {
+    font-size: 0.875em;  /* 14px */
+    max-width: 90%;
+  }
+
+  .icons {
+    width: 1.125em;  /* 18px */
+    height: 1.125em;  /* 18px */
+    margin-top: 0.625em;  /* 10px */
+    margin-left: 0.625em;  /* 10px */
+    padding-right: 0.375em;  /* 6px */ 
+  }
+}

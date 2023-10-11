@@ -1,0 +1,82 @@
+/* App.css */
+
+
+body {
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+  background-color: #0c1819; /* Set the desired background color */
+  font-family: 'Fira Code', monospace;
+  color: #8892B0;
+  
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+
+
+
+/* App.css */
+/* Styling for Webkit (Chrome, Safari) */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #7DF9FF;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #7DF9FF; /* Lighter color on hover */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #0c1819;
+}
+
+/* Styling for Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #7DF9FF #0c1819;
+}
+
+body::-webkit-scrollbar-corner {
+  display: none;
+}
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  body, html {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body, html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1025px) {
+  /* Write your desktop styles here, if you need specific styles for larger screens */
+}

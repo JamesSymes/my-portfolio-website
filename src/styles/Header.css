@@ -1,0 +1,381 @@
+
+
+@keyframes dropIn {
+  from {
+      top: -100px;
+  }
+  to {
+      top: 0;
+  }
+}
+
+.header-hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+.header {
+  position: fixed;
+  top: -100px;  /* Initially set it outside the view */
+  animation: dropIn 0.5s forwards 0.5s;  /* Animation to drop the header in */
+  left: 0;
+  width: 100%;
+  background-color: #0c1819; 
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: #8892B0;
+  font-family: 'Fira Code', monospace;
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #7DF9FF; /* Same as the hero opening color */
+  margin-left: 2%;
+  margin-top: 1%;
+  
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin-right: 40px;
+  padding: 0;
+}
+
+.nav-list li {
+  margin-right: 20px; /* Increase the margin for better spacing */
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #ccd6f6; /* Same as the hero title color */
+  font-weight: bold;
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.nav-list li a:hover {
+  color: #7DF9FF; /* Change color to the hero opening color on hover */
+}
+
+/* Contact Button/ tab */
+.contact-container {
+  display: inline-block;
+}
+
+.contact-link {
+  color: #ccd6f6; 
+  background-color: null; 
+  border-radius: 10px;
+  font-family: 'Fira Code', monospace; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  border: 2px solid #7DF9FF;
+  padding: 10px 20px;
+}
+
+.contact-link:hover {
+  color: #4a4242; 
+  border: 2px solid #7DF9FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile and Tablet Styles */
+/* Mobile and Tablet Styles */
+@media only screen and (max-width: 1024px) {
+
+  .header {
+    position: fixed;
+  top: -100px;  /* Initially set it outside the view */
+  animation: dropIn 0.5s forwards 0.5s;  /* Animation to drop the header in */
+  left: 0;
+  width: 100%;
+  background-color: #0c1819; 
+  z-index: 100;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: #8892B0;
+  font-family: 'Fira Code', monospace;
+  transition: transform 0.3s ease-in-out;
+  }
+
+  .logo {
+    margin-left: 3%;
+  margin-top: 3%;
+    padding: 0;
+    font-size: 10vw;
+    margin-right: auto;
+  }
+
+  
+
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  :root {
+    --bar-width: 40px;
+    --bar-height: 4px;
+    --hamburger-gap: 6px;
+    --foreground: #8892B0;
+    --background: #7DF9FF;
+    --hamburger-margin: 8px;
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+  }
+  
+  .hamburger-menu {
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    /* position: absolute; */
+    /* top: var(--hamburger-margin);
+    right: var(--hamburger-margin); */
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu:has(input:checked) {
+    --foreground: #7DF9FF;
+    --background: #0c1819
+  }
+  
+  .hamburger-menu:has(input:focus-visible)::before,
+  .hamburger-menu:has(input:focus-visible)::after,
+  .hamburger-menu input:focus-visible {
+    border: 1px solid var(--background);
+    box-shadow: 0 0 0 1px var(--foreground);
+  }
+  
+  .hamburger-menu::before,
+  .hamburger-menu::after,
+  .hamburger-menu input {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: #7DF9FF;
+    border-radius: 9999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing),
+      rotate var(--animation-timing), translate var(--animation-timing),
+      background-color var(--animation-timing);
+  }
+  
+  .hamburger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+  }
+  
+  .hamburger-menu:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+  }
+  
+  .hamburger-menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+  }
+  
+  .hamburger-menu input:checked {
+    opacity: 0;
+    width: 0;
+  }
+  
+  .sidebar {
+    transition: translate var(--animation-timing);
+    position: fixed; /* Change position to fixed to make it stick to the viewport */
+    translate: 100%;  /* Sidebar starts off the screen to the right */
+    right: 0;
+    padding: 0.5rem 1rem;
+    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+    background-color: #0c1819;
+    min-width: 75%;
+    max-width: 75%;
+    min-height: 100vh;
+    top: 0;
+    height: 100vh;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.2); 
+
+  }
+  
+  .hamburger-menu:has(input:checked) + .sidebar {
+    translate: 0;  /* Sidebar comes into view from the right */
+  }
+  
+ 
+
+
+.nav-list {
+  width: 70%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center the items vertically */
+  position: fixed; /* Fixes the position */
+  top: 0; /* Starts from the top */
+  right: 0; /* Initially set outside the view (hidden) */
+  background-color: transparent; /* Set a background color */
+  /* Adds a little shadow for depth */
+
+  color: transparent;
+  
+}
+
+
+.nav-list.active {
+  right: 0; /* Move it into the view (visible) */
+}
+
+.nav-list li {
+  margin-bottom: 15%;
+}
+
+
+.contact-link {
+  color: #ccd6f6; 
+  background-color: null; 
+  border-radius: 0.2em;
+  font-family: 'Fira Code', monospace; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  border: 2px solid #7DF9FF;
+  padding: 0.8em, 1.1em;
+}
+
+.contact-link:hover {
+  color: #4a4242; 
+  border: 2px solid #7DF9FF;
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 1025px) {
+  .hamburger-menu input[type="checkbox"] {
+      display: none;
+  }
+
+
+}
+
+
+/* Medium Tablet Sizes (if needed) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .logo {
+    font-size: 28px; /* Adjust accordingly */
+  }
+
+  /* Adjust the hamburger icon again if necessary for this range */
+  :root {
+    --bar-width: 35px;  
+    --bar-height: 3.5px;  
+    --hamburger-gap: 5.5px;  
+    --hamburger-margin: 7.5px; 
+  }
+}
+
+
+/* Old MetaMask Dropdown below */
+/* body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.payme-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown {
+ position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 300px;
+  background-color: #1a1a1a;
+  border: 2px solid #7DF9FF;
+  border-radius: 5px;
+  padding: 40px;
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
+
+}
+
+
+
+.dropdown p {
+  margin: 15px 0;
+  color: #FFF;
+  font-weight: 500;
+  line-height: 1.5;
+  
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #7DF9FF;
+  margin: 15px 0;
+  width: 100%;
+}
+
+.icon-ethereum {
+  width: 50px;
+  height: 50px;
+  fill: #7DF9FF;
+  transition: transform 0.3s ease, fill 0.3s ease;
+  cursor: pointer;
+}
+
+.icon-ethereum:hover {
+  transform: scale(1.3);
+  fill: #ffffff;
+}
+
+
+ */

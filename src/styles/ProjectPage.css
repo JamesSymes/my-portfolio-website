@@ -1,0 +1,195 @@
+.project-page {
+  padding-top: 100px;
+  font-family: 'Fira Code', monospace;
+  background-color: #0c1819;
+  color: #8892B0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+
+
+.project-page-header {
+  width: auto; 
+  height: auto; 
+  flex: 1;
+  position: relative;
+  transform: translateZ(0);
+  transition: transform 0.3s ease;
+
+}
+
+.project-page-header img {
+  width: 100%; 
+  max-height: 40vh;
+  object-fit: cover;
+  border: 4px solid #7DF9FF;
+  display: block; /* This will remove any extra space due to line-height */
+  box-sizing: border-box;
+}
+
+
+.project-page-header:hover {
+  transform: scale(1.05);
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #7DF9FF;
+  opacity: 0; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  transition: opacity 0.3s ease; 
+}
+
+
+.project-page-header:hover .overlay {
+  opacity: 0.7; 
+  
+}
+
+.visit-button {
+  display: none; 
+  padding: 10px 20px;
+  background-color: #0c1819; 
+  color: #ffffff; 
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Fira Code', monospace; 
+}
+
+.project-page-header:hover .visit-button {
+  display: block; 
+}
+
+
+
+
+
+
+.project-image-content {
+  max-width: auto;
+  max-height: 45vh; /* Limit image height to 50% of viewport height */
+  object-fit: cover;
+}
+
+.project-page-content {
+  width: 80%;
+  text-align: left;
+  padding: 20px;
+  background-color: rgba(0,0,0, 0.1); /* Lighter background for the content */
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+.project-page-content h1 {
+  color: #7DF9FF;
+  margin-bottom: 15px;
+}
+
+.project-page-content p {
+  margin-bottom: 20px;
+}
+
+/* .project-links {
+  text-align: left;
+  margin-left: 5%;
+  gap: 15px; 
+  margin-top: 10px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #8892B0;
+  transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+  color: #7DF9FF;
+} */
+
+.project-page-links {
+  display: flex;
+  justify-content: center; /* Center its children horizontally */
+  gap: 15px; 
+  margin-top: 10px;
+  align-items: center; /* Center its children vertically */
+}
+
+.project-page-links a {
+  text-decoration: none;
+  color: #8892B0;
+  transition: color 0.3s ease;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+
+.project-page-icons {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  transition: transform 0.3s; /* This will make the scaling smooth */
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-right: 10px; 
+}
+
+
+.project-page-icons:hover {
+  color: #7DF9FF;
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+/* Mobile */
+@media (max-width: 48em) {
+
+  .project-page {
+    width: 90%;
+margin-top: 10%;
+  }
+
+
+  .project-page-content {
+    width: 100%;
+    margin-bottom: 25%;
+
+  }
+
+
+  .project-page-content h1 {
+    font-size: 1.5em;
+  }
+  
+  .project-page-content p {
+    margin-bottom: 20px;
+  }
+}
+
+.etherscan-link {
+  margin-left: 5px;
+  color: #7DF9FF;  /* Or any other color you prefer */
+  text-decoration: none;
+}
+
+.etherscan-link:hover {
+  text-decoration: underline;
+}

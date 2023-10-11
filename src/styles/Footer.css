@@ -1,0 +1,25 @@
+.footer {
+  padding: 20px;
+  background-color: #0c1819;
+  text-align: center;
+  color: #ccd6f6;
+  font-family: 'Fira Code', monospace;
+}
+
+
+
+/* Tablet */
+@media (min-width: 48em) and (max-width: 64em) {
+  .footer {
+    padding: 1.25em;  /* 20px */
+    font-size: 0.9375em; /* 15px */
+  }
+}
+
+/* Mobile */
+@media (max-width: 48em) {
+  .footer {
+    padding: 1em; /* 16px */
+    font-size: 0.875em; /* 14px */
+  }
+}
