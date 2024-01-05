@@ -46,11 +46,11 @@ function Projects() {
     <ScrollingVisibleWrapper>
         <ProjectItem
           image={netflixCloneImageDesktop}
-          name="01. Netflix Clone - Desktop & Mobile"
-          description="Netflix clone that follows the desktop design of Netflix & the mobile App design, not the online mobile version."
+          name="01. Netflix Clone React - Desktop & Mobile"
+          description="A React.js based project where I create Netflix's UI. This clone captures the essence of both the desktop and mobile app interfaces."
           languages={['React', 'Vite', 'API', 'CSS', 'SCSS', 'JavaScript']}
           githubLink="https://github.com/JamesSymes/Netflix-Clone-React"
-          appLink="https://jamess650.sg-host.com/"
+          appLink="https://jamess650.sg-host.com"
           readMoreLink="/projects/netflix-clone-react"
         />
                       </ScrollingVisibleWrapper>
