@@ -10,11 +10,10 @@ import Skills from './components/Skills';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-
+import NetflixClone from './projectPages/NetflixClone';
 import MovieAppPage from './projectPages/MovieApp';
 import FundMePage from './projectPages/Web3FundMeFrontend';
 import QuizNightTimerPage from './projectPages/QuizNightTimer'; 
-
 import FoodTrackerAppPage from './projectPages/FoodTrackerApp'; 
 import ToDoListReactAppPage from './projectPages/ToDoListReactApp'; 
 import ToDoListAppPage from './projectPages/ToDoListApp'; 
@@ -46,6 +45,7 @@ function App() {
             <Contact />
         </>
     } />
+    <Route path="/projects/netflix-clone-react" element={<NetflixClone />} />
     <Route path="/projects/movie-app" element={<MovieAppPage />} />
     <Route path="/projects/web3-fund-me" element={<FundMePage />} />
     <Route path="/projects/Quiz-Night-Timer" element={<QuizNightTimerPage />} />
