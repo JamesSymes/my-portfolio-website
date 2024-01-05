@@ -1,5 +1,5 @@
 // App.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Loader from './components/Loader';
 import Header from './components/Header';
@@ -45,16 +45,17 @@ function App() {
             <Contact />
         </>
     } />
-    <Route path="/projects/netflix-clone-react" element={<NetflixClone />} />
-    <Route path="/projects/movie-app" element={<MovieAppPage />} />
-    <Route path="/projects/web3-fund-me" element={<FundMePage />} />
-    <Route path="/projects/Quiz-Night-Timer" element={<QuizNightTimerPage />} />
-    <Route path="/projects/quiz-night-app" element={<QuizNightAppPage />} />
-    <Route path="/projects/food-tracker" element={<FoodTrackerAppPage />} />
-    <Route path="/projects/to-do-list-react" element={<ToDoListReactAppPage />} />
-    <Route path="/projects/to-do-list" element={<ToDoListAppPage />} />
-    <Route path="/projects/weather-app" element={<WeatherAppPage />} />
-    <Route path="/projects/tic-tac-toe" element={<TicTacToeAppPage />} />
+
+    <Route path="/netflix-clone-react" element={<NetflixClone />} />
+    <Route path="/movie-app" element={<MovieAppPage />} />
+    <Route path="/web3-fund-me" element={<FundMePage />} />
+    <Route path="/Quiz-Night-Timer" element={<QuizNightTimerPage />} />
+    <Route path="/quiz-night-app" element={<QuizNightAppPage />} />
+    <Route path="/food-tracker" element={<FoodTrackerAppPage />} />
+    <Route path="/to-do-list-react" element={<ToDoListReactAppPage />} />
+    <Route path="/to-do-list" element={<ToDoListAppPage />} />
+    <Route path="/weather-app" element={<WeatherAppPage />} />
+    <Route path="/tic-tac-toe" element={<TicTacToeAppPage />} />
     
 </Routes>
 

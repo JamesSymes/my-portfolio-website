@@ -47,11 +47,11 @@ function Projects() {
         <ProjectItem
           image={netflixCloneImageDesktop}
           name="01. Netflix Clone React - Desktop & Mobile"
-          description="A React.js based project where I create Netflix's UI. This clone captures the essence of both the desktop and mobile app interfaces."
+          description="A React.js based project where I create Netflix's UI. This clone captures the essence of both the desktop and mobile app interfaces." 
           languages={['React', 'Vite', 'API', 'CSS', 'SCSS', 'JavaScript']}
           githubLink="https://github.com/JamesSymes/Netflix-Clone-React"
           appLink="https://jamess650.sg-host.com"
-          readMoreLink="/projects/netflix-clone-react"
+          readMoreLink="/netflix-clone-react"
         />
                       </ScrollingVisibleWrapper>
                   <ScrollingVisibleWrapper>
@@ -62,7 +62,7 @@ function Projects() {
           languages={['React', 'Vite', 'API', 'CSS', 'JavaScript']}
           githubLink="https://github.com/JamesSymes/E-Commerce-Movie-App"
           appLink="https://jamessymes.github.io/E-Commerce-Movie-App/"
-          readMoreLink="/projects/movie-app"
+          readMoreLink="/movie-app"
         />
                       </ScrollingVisibleWrapper>
                       <ScrollingVisibleWrapper>
@@ -73,7 +73,7 @@ function Projects() {
           languages={['Web3', 'HTML', 'CSS', 'JavaScript', 'Mobile Interface']}
           githubLink="https://github.com/JamesSymes/web3-fund-me-frontend"
           appLink="https://jamessymes.github.io/web3-fund-me-frontend/"
-          readMoreLink="/projects/web3-fund-me"
+          readMoreLink="/web3-fund-me"
         />
                         </ScrollingVisibleWrapper>
                         <ScrollingVisibleWrapper>
@@ -85,7 +85,7 @@ function Projects() {
           languages={['HTML', 'CSS', 'JavaScript', 'API']}
           githubLink="https://github.com/JamesSymes/Quiz-Night"
           appLink="https://jamessymes.github.io/Quiz-Night/"
-          readMoreLink="/projects/quiz-night-app"
+          readMoreLink="/quiz-night-app"
         />
                         </ScrollingVisibleWrapper>
                 <ScrollingVisibleWrapper>
@@ -96,7 +96,7 @@ function Projects() {
           languages={['TV Interface', 'React', 'Vite', 'API', 'CSS', 'JavaScript']}
           githubLink="https://github.com/JamesSymes/Quiz-Night-Timer"
           appLink="https://jamessymes.github.io/Quiz-Night-Timer/"
-          readMoreLink="/projects/Quiz-Night-Timer"
+          readMoreLink="/Quiz-Night-Timer"
         />
                         </ScrollingVisibleWrapper>
 
@@ -110,7 +110,7 @@ function Projects() {
           languages={['HTML', 'CSS', 'JavaScript', 'Mobile Interface']}
           githubLink="https://github.com/JamesSymes/Calories-And-Protein-Tracker"
           appLink="http://jamess530.sg-host.com/"
-          readMoreLink="/projects/food-tracker"
+          readMoreLink="/food-tracker"
         />
                         </ScrollingVisibleWrapper>
                 <ScrollingVisibleWrapper>
@@ -121,7 +121,7 @@ function Projects() {
           languages={['React', 'Vite', 'CSS', 'JavaScript']}
           githubLink="https://github.com/JamesSymes/ToDo-List-React"
           appLink="https://jamessymes.github.io/ToDo-List-React/"
-          readMoreLink="/projects/to-do-list-react"
+          readMoreLink="/to-do-list-react"
         />
                         </ScrollingVisibleWrapper>
                 <ScrollingVisibleWrapper>
@@ -132,7 +132,7 @@ function Projects() {
           languages={['HTML', 'CSS', 'JavaScript']}
           githubLink="https://github.com/JamesSymes/ToDo-List"
           appLink="https://jamessymes.github.io/ToDo-List/"
-          readMoreLink="/projects/to-do-list"
+          readMoreLink="/to-do-list"
         />
                         </ScrollingVisibleWrapper>
                 <ScrollingVisibleWrapper>
@@ -143,7 +143,7 @@ function Projects() {
           languages={['React', 'Vite', 'API', 'CSS', 'JavaScript']}
           githubLink="https://github.com/JamesSymes/Weather-App"
           appLink="https://jamessymes.github.io/Weather-App/"
-          readMoreLink="/projects/weather-app"
+          readMoreLink="/weather-app"
         />
                         </ScrollingVisibleWrapper>
                 <ScrollingVisibleWrapper>
@@ -154,7 +154,7 @@ function Projects() {
           languages={['HTML', 'CSS', 'JavaScript']}
           githubLink="https://github.com/JamesSymes/tic-tac-toe-game"
           appLink="https://jamessymes.github.io/tic-tac-toe-game/"
-          readMoreLink="/projects/tic-tac-toe"
+          readMoreLink="/tic-tac-toe"
         />
                         </ScrollingVisibleWrapper>
                 
